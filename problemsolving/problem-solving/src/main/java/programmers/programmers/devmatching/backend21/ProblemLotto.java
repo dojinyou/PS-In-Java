@@ -1,4 +1,4 @@
-package programmers.devmatching.backend21;
+package programmers.programmers.devmatching.backend21;
 
 public class ProblemLotto {
   // Source : https://programmers.co.kr/learn/courses/30/lessons/77484

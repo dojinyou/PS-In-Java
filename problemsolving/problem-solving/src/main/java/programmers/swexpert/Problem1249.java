@@ -1,4 +1,4 @@
-package programmers.devmatching.swexpert;
+package programmers.swexpert;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

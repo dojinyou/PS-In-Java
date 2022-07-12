@@ -2,9 +2,9 @@ package programmers.devmatching.backend21;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
+
+import programmers.programmers.devmatching.backend21.ProblemLotto;
 
 class ProblemLottoTest {
 
