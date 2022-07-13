@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="programmers.devmatching.backend21.ProblemLottoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-02T06:55:17" hostname="DESKTOP-KV1TF59" time="0.019">
-  <properties/>
-  <testcase name="solution()" classname="programmers.devmatching.backend21.ProblemLottoTest" time="0.019"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
