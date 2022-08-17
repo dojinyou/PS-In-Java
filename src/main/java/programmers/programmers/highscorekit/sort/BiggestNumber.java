@@ -5,18 +5,28 @@ import java.util.stream.Collectors;
 
 public class BiggestNumber {
   public String solution(int[] numbers) {
+    boolean allZeros = true;
+    for (int number: numbers) {
+      if (number != 0) {
+        allZeros = false;
+        break;
+      }
+    }
 
-    return Integer
-        .valueOf(Arrays
-                     .stream(numbers)
-                     .mapToObj(MyNumber::new)
-                     .sorted()
-                     .map(myNumber -> String.valueOf(myNumber.numbers))
-                     .collect(Collectors.joining()))
-        .toString();
+    if (allZeros) {
+      return "0";
+    }
+
+
+    return Arrays
+        .stream(numbers)
+        .mapToObj(MyNumber::new)
+        .sorted()
+        .map(myNumber -> String.valueOf(myNumber.numbers))
+        .collect(Collectors.joining());
   }
 
-  class MyNumber implements Comparable<MyNumber> {
+  static class MyNumber implements Comparable<MyNumber> {
     private final char[] numbers;
 
     MyNumber(int numbers) {
@@ -40,6 +50,7 @@ public class BiggestNumber {
         return o.numbers[otherIdx] - numbers[thisIdx];
       }
 
+
       int lastNum;
 
       if (length < otherLength) {
@@ -58,7 +69,7 @@ public class BiggestNumber {
           if (lastNum == number) {
             continue;
           }
-          return lastNum - number;
+          return number - lastNum;
         }
       }
 
