@@ -1,8 +1,10 @@
 package programmers.programmers;
 
 class Solution {
-  public int solution(int[] absolutes, boolean[] signs) {
-    int answer = 123456789;
+  public int solution(int[] a, int[] b) {
+    int answer = 1234567890;
     return answer;
   }
+
+
 }
