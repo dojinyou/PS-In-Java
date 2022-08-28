@@ -1,11 +1,8 @@
 package programmers.programmers;
 
 class Solution {
-
-  public int solution(
-      int[] ingredient,
-      int results
-  ) {
-    return 1;
+  public int solution(int[] absolutes, boolean[] signs) {
+    int answer = 123456789;
+    return answer;
   }
 }
