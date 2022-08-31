@@ -1,4 +1,4 @@
-package programmers.programmers.private2208.week2;
+package programmers.programmers.private2208.week2.test1;
 
 public class BrokenBuilding {
   // 보드 높이 : Board.length <= 1000

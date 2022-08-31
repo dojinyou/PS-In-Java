@@ -1,4 +1,4 @@
-package programmers.programmers.private2208.week2;
+package programmers.programmers.private2208.week2.test1;
 
 import java.util.ArrayList;
 import java.util.List;

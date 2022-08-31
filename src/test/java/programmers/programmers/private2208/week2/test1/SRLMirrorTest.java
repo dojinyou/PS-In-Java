@@ -1,4 +1,4 @@
-package programmers.programmers.private2208.week2;
+package programmers.programmers.private2208.week2.test1;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
 import org.junit.jupiter.params.provider.ArgumentsSource;
 
-import programmers.programmers.private2208.week2.SRLMirror;
+import programmers.programmers.private2208.week2.test1.SRLMirror;
 
 class SRLMirrorTest {
   static class DataArguments implements ArgumentsProvider {
