@@ -1,4 +1,6 @@
 /**
+ *  프로그래머스 / 72411 / 메뉴리뉴얼
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/72411
  *  solve: 40분
  */
 
