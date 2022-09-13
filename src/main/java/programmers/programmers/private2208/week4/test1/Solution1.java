@@ -5,7 +5,7 @@
  */
 
 
-package programmers.programmers.private2208.week4;
+package programmers.programmers.private2208.week4.test1;
 
 import java.util.Arrays;
 

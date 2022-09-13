@@ -4,7 +4,7 @@
  *  fail: 1시간, add: 풀이법 생각나서 다시 품
  */
 
-package programmers.programmers.private2208.week4;
+package programmers.programmers.private2208.week4.test1;
 
 import java.util.Arrays;
 

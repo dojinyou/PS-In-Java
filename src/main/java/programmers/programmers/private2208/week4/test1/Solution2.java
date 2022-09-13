@@ -4,7 +4,7 @@
  * solve: 2분
  */
 
-package programmers.programmers.private2208.week4;
+package programmers.programmers.private2208.week4.test1;
 
 public class Solution2 {
   boolean solution(String s) {
