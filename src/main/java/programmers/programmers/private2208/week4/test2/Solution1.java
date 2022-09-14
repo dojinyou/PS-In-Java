@@ -1,5 +1,7 @@
 /**
- *  solv: 8분
+ *  프로그래머스 / X / 팰린드롬
+ *  2018 하반기 공채 대비 코딩테스트 실전모의고사 1회 1번 문제라고 합니다. (지금은 확인 불가)
+ *  solve: 8분
  */
 package programmers.programmers.private2208.week4.test2;
 
@@ -12,7 +14,6 @@ public class Solution1 {
         count++;
       }
     }
-
 
     return count;
   }

@@ -1,4 +1,6 @@
 /**
+ *  프로그래머스 / 1845 / 폰켓몬
+ *  https://school.programmers.co.kr/learn/courses/30/lessons/1845
  *  solve: 5분
  */
 
@@ -20,6 +22,6 @@ public class Solution2 {
       poketmonIdToCount.put(id, count + 1);
     }
 
-    return poketmonIdToCount.values().size();
+    return poketmonIdToCount.size();
   }
 }
