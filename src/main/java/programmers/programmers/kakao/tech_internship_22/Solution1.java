@@ -1,7 +1,7 @@
 /**
  *  프로그래머스 Lv.1 / 118666 / 성격 유형 검사하기
  *  https://school.programmers.co.kr/learn/courses/30/lessons/118666
- *
+ *  solve: 40분
  */
 package programmers.programmers.kakao.tech_internship_22;
 
