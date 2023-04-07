@@ -1,5 +1,7 @@
 package leetcode.studyplan.level2.day1;
 
+import java.util.Arrays;
+
 public class WhereWillTheBallFall {
 
     public int[] findBall(int[][] grid) {
@@ -20,7 +22,7 @@ public class WhereWillTheBallFall {
 
         while (currentX < grid.length) {
             System.out.print("currentX="+currentX);
-            System.out.println("currentY="+currentY);
+            System.out.println(" / currentY="+currentY);
             int nextBoardNumber = grid[currentX][currentY];
             Board board = Board.numberOf(nextBoardNumber);
             // 다음으로 갈 수 있다면,
@@ -38,11 +40,11 @@ public class WhereWillTheBallFall {
     private boolean isNotValidPath(int currentX, int currentY, Board board, int[][] grid) {
         int nextX = currentX + 1;
         int nextY = currentY + board.dy;
-        if (nextY < 0 || grid[currentX].length <= nextY) return false;
-        if (board != Board.numberOf(grid[currentX][nextY])) return false;
-        if (nextX < grid.length && grid[nextX].length <= nextY) return false;
+        if (nextY < 0 || grid[currentX].length <= nextY) return true;
+        if (board != Board.numberOf(grid[currentX][nextY])) return true;
+        if (nextX < grid.length && grid[nextX].length <= nextY) return true;
 
-        return true;
+        return false;
     }
 
     enum Board {
@@ -64,12 +66,14 @@ public class WhereWillTheBallFall {
     }
 
     public static void main(String[] args) {
-        new WhereWillTheBallFall().findBall(new int[][]{
+        var result = new WhereWillTheBallFall().findBall(new int[][]{
                 {1,1,1,-1,-1},
                 {1,1,1,-1,-1},
                 {-1,-1,-1,1,1},
                 {1,1,1,1,-1},
                 {-1,-1,-1,-1,-1}
         });
+
+        System.out.println(Arrays.toString(result));
     }
 }
