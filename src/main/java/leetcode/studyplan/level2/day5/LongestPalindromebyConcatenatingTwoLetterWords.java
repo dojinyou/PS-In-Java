@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import Utils.TestUtils;
+
 public class LongestPalindromebyConcatenatingTwoLetterWords {
 
 	public int longestPalindrome(String[] words) {
@@ -54,13 +56,7 @@ public class LongestPalindromebyConcatenatingTwoLetterWords {
 			var expect = outputs[i];
 			var result = solution.longestPalindrome(input);
 
-			printResult(i, input, expect, result);
-		}
-	}
-
-	private static void printResult(int idx, String[] input, int expect, int result) {
-		if (expect != result) {
-			System.out.printf("[%d] %s\n\tinput:%s\n\texpect:%d\n\tresult:%d\n\n", idx, "FAILED", Arrays.toString(input), expect, result);
+			TestUtils.printResult(i, expect, result);
 		}
 	}
 }
