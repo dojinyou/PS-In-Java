@@ -1,6 +1,6 @@
 package leetcode.studyplan.level2.day4;
 
-import leetcode.studyplan.level2.day3.ListNode;
+import leetcode.studyplan.level2.datastructure.ListNode;
 
 public class OddEvenLinkedList {
 

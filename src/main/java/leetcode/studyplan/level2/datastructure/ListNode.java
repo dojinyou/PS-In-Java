@@ -1,4 +1,4 @@
-package leetcode.studyplan.level2.day3;
+package leetcode.studyplan.level2.datastructure;
 
 
 public class ListNode {

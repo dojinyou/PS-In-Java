@@ -3,6 +3,8 @@ package leetcode.studyplan.level2.day3;
 import java.util.Deque;
 import java.util.LinkedList;
 
+import leetcode.studyplan.level2.datastructure.ListNode;
+
 public class PalindromeLinkedList {
 
     public boolean isPalindrome(ListNode head) {

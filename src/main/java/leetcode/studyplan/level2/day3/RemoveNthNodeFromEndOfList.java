@@ -1,5 +1,7 @@
 package leetcode.studyplan.level2.day3;
 
+import leetcode.studyplan.level2.datastructure.ListNode;
+
 public class RemoveNthNodeFromEndOfList {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
