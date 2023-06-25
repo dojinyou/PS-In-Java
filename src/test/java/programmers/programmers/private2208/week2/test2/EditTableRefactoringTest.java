@@ -1,14 +1,15 @@
 package programmers.programmers.private2208.week2.test2;
 
-import static org.assertj.core.api.Assertions.*;
-
-import java.util.stream.Stream;
-
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.ArgumentsProvider;
 import org.junit.jupiter.params.provider.ArgumentsSource;
+
+import java.util.Optional;
+import java.util.stream.Stream;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class EditTableRefactoringTest {
   static class DataArguments implements ArgumentsProvider {
@@ -52,6 +53,7 @@ class EditTableRefactoringTest {
     String actual = testClass.solution(data.n, data.k, data.cmd);
 
     assertThat(actual).isEqualTo(data.results);
+    var optional = Optional.of("Test");
   }
 
 }

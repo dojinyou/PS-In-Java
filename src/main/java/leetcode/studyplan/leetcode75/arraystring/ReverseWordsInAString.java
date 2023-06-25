@@ -26,13 +26,13 @@ public class ReverseWordsInAString {
 				continue;
 			}
 
-			if (!sb.isEmpty()) {
+			if (sb.length() != 0) {
 				stack.push(sb.toString());
 				sb.setLength(0);
 			}
 		}
 
-		if (!sb.isEmpty()) {
+		if (sb.length() != 0) {
 			stack.push(sb.toString());
 			sb.setLength(0);
 		}

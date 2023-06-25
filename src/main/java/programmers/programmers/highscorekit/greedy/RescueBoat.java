@@ -1,7 +1,5 @@
 package programmers.programmers.highscorekit.greedy;
 
-import java.util.Arrays;
-
 public class RescueBoat {
 
 	private static final int MIN_WEIGHT = 40;
@@ -58,21 +56,4 @@ public class RescueBoat {
 
 		return currentIdx;
 	}
-
-	public static void main(String[] args) {
-		var solution = new RescueBoat();
-		var inputs = new Input[] {
-			new Input(new int[]{70, 50, 80, 50}, 100, 3),
-			new Input(new int[]{70, 80, 50}, 100, 3),
-		};
-
-		for(var input : inputs) {
-			var result = solution.solution(input.people, input.limit);
-			if (result != input.answer) {
-				System.out.println("people: "+ Arrays.toString(input.people)+", limit: "+ input.limit);
-				System.out.println("answer:"+input.answer+", result: "+result);
-			}
-		}
-	}
-	record Input(int[] people, int limit, int answer) {}
 }
